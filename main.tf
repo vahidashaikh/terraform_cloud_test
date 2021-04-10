@@ -14,3 +14,8 @@ terraform {
 provider "aws" {
   region = "us-east-1"
 }
+
+resource "aws_instance" "dev_vine" {
+  ami           = "ami-02fe94dee086c0c37"
+  instance_type = "t2.micro"
+}
